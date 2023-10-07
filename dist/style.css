@@ -24,7 +24,7 @@ canvas {
 }
 
 .nav-header {
-
+    width: 100%;
     background-color: var(--red);
     padding: 10px 0;
 }
