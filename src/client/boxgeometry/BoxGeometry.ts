@@ -1,7 +1,6 @@
 import * as THREE from "three";
 import * as BufferGeometryUtils from "three/examples/jsm/utils/BufferGeometryUtils";
 
-
 const params = {
   segments: 50,
   edgeRadius: 0.17,
@@ -134,8 +133,6 @@ export default class BoxGeometry {
 
     // place planes a bit behind the box sides
     const offset = 0.48;
-
-   
 
     return BufferGeometryUtils.mergeBufferGeometries(
       [
