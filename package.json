@@ -1,26 +1,29 @@
 {
-  "name": "three-sphere",
+  "name": "three.js-typescript-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "start": "webpack --watch --mode development"
+    "build": "webpack --config ./src/client/webpack.prod.js",
+    "dev": "webpack serve --config ./src/client/webpack.dev.js",
+    "test": "tsc -p ./src/server",
+    "start": "node ./dist/server/server.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "ovoDima",
   "license": "ISC",
   "devDependencies": {
-    "@types/three": "^0.154.0",
-    "autoprefixer": "^10.4.14",
-    "mini-css-extract-plugin": "^2.7.6",
-    "prettier": "3.0.2",
-    "ts-loader": "^9.4.4",
-    "typescript": "^5.1.6",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "@types/dat.gui": "^0.7.7",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.23",
+    "@types/three": "^0.143.2",
+    "three": "^0.143.0",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "three": "^0.154.0"
+    "express": "^4.17.3"
   }
 }

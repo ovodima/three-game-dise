@@ -1,5 +1,6 @@
 import * as THREE from "three";
-import BoxGeometry from "./BoxGeometry";
+import BoxGeometry from "./boxgeometry/BoxGeometry";
+
 // import "./style.css"
 
 const sizes = {
